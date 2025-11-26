@@ -5,11 +5,10 @@ namespace Tyuiu.AymurzinaJV.Sprint4.Task0.V9.Lib
     {
         public int GetSumEvenArrEl(int[] array)
         {
-            int i;
             int sum = 0;
-            for (i = 0; i <= 9; i += 2)
+            foreach (char num in array)
             {
-                sum += array[i];
+                if (num % 2 == 0) sum += num;
             }
             return sum;
         }
